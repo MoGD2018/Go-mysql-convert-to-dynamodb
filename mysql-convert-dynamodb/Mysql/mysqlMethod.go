@@ -17,7 +17,7 @@ type Field struct {
 func ConnectDB() *sql.DB {
 	// DSN:Data Source Name
 	// 数据源语法："用户名:密码@[连接方式](主机名:端口号)/数据库名"
-	dsn := "admin:admin123456@tcp(mogd-test.c5dkdeacqtlg.ap-southeast-1.rds.amazonaws.com:3306)/purchase?charset=utf8mb4&parseTime=True"
+	dsn := "admin:admin123456@tcp(172.0.0.1:3306)/purchase?charset=utf8mb4&parseTime=True"
 	// 不会校验账号密码是否正确
 	// 注意！！！这里不要使用:=，我们是给全局变量赋值，然后在main函数中使用全局变量db
 	db, err := sql.Open("mysql", dsn)
