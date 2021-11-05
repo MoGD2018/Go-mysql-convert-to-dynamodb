@@ -99,7 +99,7 @@ func TableInfo(db *sql.DB, dbName string) []string {
 	}
 	return result
 }
-// TableFiledInfo 获取数据表结构
+// TableFiledInfo 获取数据表字段
 // db: *sql.DB 数据库连接
 // database: string 数据库
 // table: string 数据表
